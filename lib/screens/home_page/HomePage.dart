@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:nu_app_copy/screens/Indication/Indication.dart';
+
 import 'package:nu_app_copy/screens/home_page/components/body.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,14 +12,14 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(100.0),
-        child: buildAppBar(),
+        child: buildAppBar(context),
       ),
       body: const Body(),
     );
   }
 }
 
-AppBar buildAppBar() {
+AppBar buildAppBar(BuildContext context) {
   return AppBar(
     elevation: 0,
     leading: Padding(
@@ -41,7 +43,14 @@ AppBar buildAppBar() {
       Padding(
         padding: const EdgeInsets.only(right: 8.0),
         child: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => Indication(),
+              ),
+            );
+          },
           icon: const Icon(CupertinoIcons.person_add),
         ),
       ),
