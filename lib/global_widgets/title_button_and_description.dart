@@ -47,7 +47,7 @@ class TitleButtonAndDescription extends StatelessWidget {
               child: RichText(
                 text: TextSpan(
                   text: description,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w500,
                       color: Color.fromARGB(255, 131, 130, 130),

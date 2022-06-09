@@ -5,6 +5,7 @@ import 'package:nu_app_copy/global_widgets/title_button_and_description.dart';
 import 'package:nu_app_copy/screens/home_page/components/balance_and_account.dart';
 import 'package:nu_app_copy/screens/home_page/components/circular_options.dart';
 import 'package:nu_app_copy/screens/home_page/components/credit_card.dart';
+import 'package:nu_app_copy/screens/home_page/components/discover_services.dart';
 import 'package:nu_app_copy/screens/home_page/components/info_cards.dart';
 import 'package:nu_app_copy/screens/home_page/components/insurance.dart';
 import 'package:nu_app_copy/screens/home_page/components/my_cards.dart';
@@ -60,6 +61,30 @@ class Body extends StatelessWidget {
               title: 'Shopping',
               description:
                   'Vantagens exclusivas das nossas marcas preferidas.'),
+          const Divider(
+            thickness: 2,
+            color: Color.fromARGB(255, 207, 205, 205),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(
+              left: 24,
+              top: 16,
+              bottom: 16,
+            ),
+            child:
+                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: const [
+                  Text(
+                    'Descubra mais',
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w500),
+                  ),
+                ],
+              ),
+              DiscoverServices()
+            ]),
+          ),
         ],
       ),
     );

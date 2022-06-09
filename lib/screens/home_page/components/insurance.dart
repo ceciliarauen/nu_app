@@ -96,7 +96,7 @@ class Insurance extends StatelessWidget {
                       Radius.circular(15),
                     ),
                   ),
-                  child: InsuranceInfo(
+                  child: const InsuranceInfo(
                     title: 'Seguro Celular',
                     icone: Icon(
                       CupertinoIcons.phone,
@@ -133,13 +133,13 @@ class InsuranceInfo extends StatelessWidget {
           ),
           Text(
             title,
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
           ),
           Spacer(),
           Text(
             'Conhecer',
             style: TextStyle(
-                fontSize: 16,
+                fontSize: 14,
                 fontWeight: FontWeight.w600,
                 color: ColorsPalette.kPrimaryColor),
           ),
