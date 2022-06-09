@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:nu_app_copy/screens/components/body.dart';
+import 'package:nu_app_copy/screens/home_page/components/body.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -38,9 +38,12 @@ AppBar buildAppBar() {
         onPressed: () {},
         icon: const Icon(CupertinoIcons.question_circle),
       ),
-      IconButton(
-        onPressed: () {},
-        icon: const Icon(CupertinoIcons.person_add),
+      Padding(
+        padding: const EdgeInsets.only(right: 8.0),
+        child: IconButton(
+          onPressed: () {},
+          icon: const Icon(CupertinoIcons.person_add),
+        ),
       ),
     ],
     flexibleSpace: Align(

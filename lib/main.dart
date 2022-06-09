@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:nu_app_copy/constants/colors_palette.dart';
-import 'package:nu_app_copy/screens/HomePage.dart';
+import 'package:nu_app_copy/screens/home_page/HomePage.dart';
 
 void main() {
   runApp(const MyApp());
