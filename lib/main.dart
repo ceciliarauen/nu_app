@@ -24,6 +24,23 @@ class MyApp extends StatelessWidget {
         ),
         scaffoldBackgroundColor: ColorsPalette.kBackgroundColor,
         primaryColor: ColorsPalette.kPrimaryColor,
+        inputDecorationTheme: InputDecorationTheme(
+          focusedBorder: UnderlineInputBorder(
+            borderSide: BorderSide(
+              color: Color.fromARGB(121, 190, 188, 188),
+            ),
+          ),
+          enabledBorder: UnderlineInputBorder(
+            borderSide: BorderSide(
+              color: Color.fromARGB(121, 190, 188, 188),
+            ),
+          ),
+        ),
+        textSelectionTheme: const TextSelectionThemeData(
+          cursorColor: ColorsPalette.kPrimaryColor,
+          selectionColor: Color.fromARGB(50, 162, 4, 224),
+          selectionHandleColor: ColorsPalette.kPrimaryColor,
+        ),
       ),
       home: const HomePage(),
     );

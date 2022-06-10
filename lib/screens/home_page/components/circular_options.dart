@@ -65,8 +65,8 @@ class CircleContainer extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: size.height * 0.2,
-            width: size.width * 0.2,
+            height: size.height * 0.18,
+            width: size.width * 0.18,
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
               color: ColorsPalette.kContainers,

@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(100.0),
+        preferredSize: const Size.fromHeight(120.0),
         child: buildAppBar(context),
       ),
       body: const Body(),
@@ -29,6 +29,8 @@ AppBar buildAppBar(BuildContext context) {
         icon: const Icon(CupertinoIcons.person),
         alignment: Alignment.bottomRight,
         iconSize: 32,
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
       ),
     ),
     actions: [
@@ -52,6 +54,8 @@ AppBar buildAppBar(BuildContext context) {
             );
           },
           icon: const Icon(CupertinoIcons.person_add),
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
         ),
       ),
     ],
