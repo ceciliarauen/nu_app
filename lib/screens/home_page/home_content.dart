@@ -23,7 +23,7 @@ class Body extends StatelessWidget {
       child: Column(
         children: [
           const BalanceAndAccountButton(
-            valor: 2,
+            valor: 'R\$ 1.987,00',
           ),
           const CircularOptions(),
           MyCards(size: size),
@@ -32,7 +32,7 @@ class Body extends StatelessWidget {
             thickness: 2,
             color: Color.fromARGB(255, 207, 205, 205),
           ),
-          const CreditCard(valor: 250.52),
+          const CreditCard(valor: 'R\$ 1250,87'),
           const Divider(
             thickness: 2,
             color: Color.fromARGB(255, 207, 205, 205),

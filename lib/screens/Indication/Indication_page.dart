@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nu_app_copy/screens/Indication/body.dart';
+import 'package:nu_app_copy/screens/Indication/indication_content.dart';
 
 class Indication extends StatelessWidget {
   const Indication({Key? key}) : super(key: key);

@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nu_app_copy/constants/colors_palette.dart';
-import 'package:nu_app_copy/screens/Indication/invite_text_and_image.dart';
-import 'package:nu_app_copy/screens/Indication/share_with_friends.dart';
+import 'package:nu_app_copy/screens/Indication/components/invite_text_and_image.dart';
+import 'package:nu_app_copy/screens/Indication/components/share_with_friends.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);

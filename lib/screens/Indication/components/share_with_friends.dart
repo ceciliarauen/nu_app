@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:nu_app_copy/screens/Indication/Forms/email_form.dart';
-import 'package:nu_app_copy/screens/home_page/HomePage.dart';
+import 'package:nu_app_copy/screens/Indication/Forms/email/email_form_page.dart';
+import 'package:nu_app_copy/screens/home_page/home_page.dart';
 
 class ShareWithFriends extends StatelessWidget {
   const ShareWithFriends({Key? key}) : super(key: key);

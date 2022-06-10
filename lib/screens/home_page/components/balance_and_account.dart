@@ -8,7 +8,7 @@ class BalanceAndAccountButton extends StatelessWidget {
     required this.valor,
   }) : super(key: key);
 
-  final double valor;
+  final String valor;
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,7 @@ class BalanceAndAccountButton extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(top: 8),
             child: Text(
-              'R\$ ' + valor.toString(),
+              valor,
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
             ),
           ),

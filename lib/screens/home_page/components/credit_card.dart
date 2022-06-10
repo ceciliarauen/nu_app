@@ -8,7 +8,7 @@ class CreditCard extends StatelessWidget {
     required this.valor,
   }) : super(key: key);
 
-  final double valor;
+  final String valor;
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +55,7 @@ class CreditCard extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(top: 12, bottom: 8),
                   child: Text(
-                    'R\$ ' + valor.toString(),
+                    valor,
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                   ),
                 ),
