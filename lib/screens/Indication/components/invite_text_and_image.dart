@@ -21,7 +21,7 @@ class InviteTextAndImage extends StatelessWidget {
               color: ColorsPalette.kPrimaryColor,
             ),
           ),
-          Text(
+          const Text(
             'aceitaram seu convite para o',
             style: TextStyle(
               fontSize: 24,
@@ -39,17 +39,15 @@ class InviteTextAndImage extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(top: 8, bottom: 16),
-            child: Expanded(
-              child: RichText(
-                text: TextSpan(
-                  text:
-                      'Salve amigos e familiares da burocracia. Para cada convite aceito, um novo brasão é liberado.',
-                  style: const TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w500,
-                      color: Color.fromARGB(255, 131, 130, 130),
-                      height: 1.5),
-                ),
+            child: RichText(
+              text: const TextSpan(
+                text:
+                    'Salve amigos e familiares da burocracia. Para cada convite aceito, um novo brasão é liberado.',
+                style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                    color: Color.fromARGB(255, 131, 130, 130),
+                    height: 1.5),
               ),
             ),
           ),

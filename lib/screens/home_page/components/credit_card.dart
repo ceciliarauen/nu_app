@@ -56,7 +56,7 @@ class CreditCard extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 12, bottom: 8),
                   child: Text(
                     valor,
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                    style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                   ),
                 ),
                 const Text(
@@ -71,7 +71,7 @@ class CreditCard extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 16.0),
                   child: ElevatedButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       'Parcelar compras',
                       style: TextStyle(
                         color: Color.fromARGB(255, 19, 18, 18),

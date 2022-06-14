@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:nu_app_copy/constants/colors_palette.dart';
 
 class DiscoverServices extends StatelessWidget {
@@ -10,7 +9,7 @@ class DiscoverServices extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      physics: BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
+      physics: const  BouncingScrollPhysics(parent:  AlwaysScrollableScrollPhysics()),
       scrollDirection: Axis.horizontal,
       child: Padding(
         padding: const EdgeInsets.only(
@@ -135,15 +134,13 @@ class ServiceCard extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 10, bottom: 16),
-                    child: Expanded(
-                      child: RichText(
-                        text: TextSpan(
-                          text: description,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                            color: Color.fromARGB(255, 131, 130, 130),
-                          ),
+                    child: RichText(
+                      text: TextSpan(
+                        text: description,
+                        style: const TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                          color: Color.fromARGB(255, 131, 130, 130),
                         ),
                       ),
                     ),
@@ -154,7 +151,7 @@ class ServiceCard extends StatelessWidget {
                       onPressed: press,
                       child: Text(
                         buttonText,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 15,
                           fontWeight: FontWeight.w600,

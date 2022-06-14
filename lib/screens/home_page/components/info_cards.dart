@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:nu_app_copy/constants/colors_palette.dart';
 
 class InfoCards extends StatelessWidget {
@@ -41,19 +40,17 @@ class InfoCards extends StatelessWidget {
                     ),
                     child: Padding(
                       padding: const EdgeInsets.all(24),
-                      child: Expanded(
-                        child: RichText(
-                          text: TextSpan(
-                            text: 'Você tem até ',
-                            style: DefaultTextStyle.of(context).style,
-                            children: const <TextSpan>[
-                              TextSpan(
-                                  text: 'R\$25.000,00',
-                                  style: TextStyle(
-                                      color: Color.fromARGB(255, 132, 8, 180))),
-                              TextSpan(text: ' disponíveis para empréstimo!'),
-                            ],
-                          ),
+                      child: RichText(
+                        text: TextSpan(
+                          text: 'Você tem até ',
+                          style: DefaultTextStyle.of(context).style,
+                          children: const <TextSpan>[
+                            TextSpan(
+                                text: 'R\$25.000,00',
+                                style: TextStyle(
+                                    color: Color.fromARGB(255, 132, 8, 180))),
+                            TextSpan(text: ' disponíveis para empréstimo!'),
+                          ],
                         ),
                       ),
                     ),
@@ -78,20 +75,18 @@ class InfoCards extends StatelessWidget {
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(24),
-                    child: Expanded(
-                      child: RichText(
-                        text: TextSpan(
-                          text: 'Salve seus amigos da burocracia. ',
-                          style: DefaultTextStyle.of(context).style,
-                          children: const <TextSpan>[
-                            TextSpan(
-                              text: 'Faça um convite para o Nubank.',
-                              style: TextStyle(
-                                color: Color.fromARGB(255, 132, 8, 180),
-                              ),
+                    child: RichText(
+                      text: TextSpan(
+                        text: 'Salve seus amigos da burocracia. ',
+                        style: DefaultTextStyle.of(context).style,
+                        children: const <TextSpan>[
+                          TextSpan(
+                            text: 'Faça um convite para o Nubank.',
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 132, 8, 180),
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ),
                   ),

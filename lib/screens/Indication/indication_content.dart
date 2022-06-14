@@ -9,7 +9,6 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
@@ -31,9 +30,9 @@ class Body extends StatelessWidget {
             ),
           ),
         ),
-        InviteTextAndImage(),
-        Spacer(),
-        InviteButton()
+        const InviteTextAndImage(),
+        const Spacer(),
+        const InviteButton()
       ],
     );
   }
@@ -54,11 +53,11 @@ class InviteButton extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => ShareWithFriends(),
+              builder: (context) => const ShareWithFriends(),
             ),
           );
         },
-        child: Text(
+        child: const Text(
           'Convidar amigos',
         ),
         style: ElevatedButton.styleFrom(

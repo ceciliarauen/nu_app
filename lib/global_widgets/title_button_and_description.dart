@@ -43,16 +43,14 @@ class TitleButtonAndDescription extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(bottom: 16),
-            child: Expanded(
-              child: RichText(
-                text: TextSpan(
-                  text: description,
-                  style: const TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w500,
-                      color: Color.fromARGB(255, 131, 130, 130),
-                      height: 1.3),
-                ),
+            child: RichText(
+              text: TextSpan(
+                text: description,
+                style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                    color: Color.fromARGB(255, 131, 130, 130),
+                    height: 1.3),
               ),
             ),
           ),

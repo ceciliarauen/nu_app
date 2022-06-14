@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         ),
         scaffoldBackgroundColor: ColorsPalette.kBackgroundColor,
         primaryColor: ColorsPalette.kPrimaryColor,
-        inputDecorationTheme: InputDecorationTheme(
+        inputDecorationTheme: const InputDecorationTheme(
           focusedBorder: UnderlineInputBorder(
             borderSide: BorderSide(
               color: Color.fromARGB(121, 190, 188, 188),

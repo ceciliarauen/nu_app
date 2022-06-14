@@ -24,10 +24,9 @@ class BalanceAndAccountButton extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
+              const Text(
                 'Conta',
-                style:
-                    const TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
               ),
               IconButton(
                 onPressed: () {},
@@ -40,10 +39,10 @@ class BalanceAndAccountButton extends StatelessWidget {
             ],
           ),
           Padding(
-            padding: EdgeInsets.only(top: 8),
+            padding: const EdgeInsets.only(top: 8),
             child: Text(
               valor,
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
             ),
           ),
         ],

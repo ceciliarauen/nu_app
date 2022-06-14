@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:nu_app_copy/screens/Indication/Indication_page.dart';
+import 'package:nu_app_copy/screens/Indication/indication_page.dart';
 
 import 'package:nu_app_copy/screens/home_page/home_content.dart';
 
@@ -49,7 +49,7 @@ AppBar buildAppBar(BuildContext context) {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => Indication(),
+                builder: (context) => const Indication(),
               ),
             );
           },

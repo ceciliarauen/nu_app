@@ -13,7 +13,7 @@ class InviteButton extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 24.0),
       child: ElevatedButton(
         onPressed: () {},
-        child: Text(
+        child: const Text(
           'Convidar amigos',
         ),
         style: ElevatedButton.styleFrom(

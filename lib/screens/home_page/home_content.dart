@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:nu_app_copy/constants/colors_palette.dart';
 import 'package:nu_app_copy/global_widgets/title_button_and_description.dart';
 import 'package:nu_app_copy/screens/home_page/components/balance_and_account.dart';
 import 'package:nu_app_copy/screens/home_page/components/circular_options.dart';
@@ -82,7 +80,7 @@ class Body extends StatelessWidget {
                   ),
                 ],
               ),
-              DiscoverServices()
+              const DiscoverServices()
             ]),
           ),
         ],

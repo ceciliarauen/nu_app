@@ -23,10 +23,10 @@ class Insurance extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
-            children: [
+            children: const [
               Text(
                 'Seguro',
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.w500,
                 ),
@@ -35,15 +35,13 @@ class Insurance extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(top: 10, bottom: 16),
-            child: Expanded(
-              child: RichText(
-                text: TextSpan(
-                  text: 'Proteção para você cuidar do que importa',
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                    color: Color.fromARGB(255, 131, 130, 130),
-                  ),
+            child: RichText(
+              text: const TextSpan(
+                text: 'Proteção para você cuidar do que importa',
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500,
+                  color: Color.fromARGB(255, 131, 130, 130),
                 ),
               ),
             ),
@@ -67,7 +65,7 @@ class Insurance extends StatelessWidget {
                       Radius.circular(15),
                     ),
                   ),
-                  child: InsuranceInfo(
+                  child: const InsuranceInfo(
                     title: 'Seguro Vida',
                     icone: Icon(
                       CupertinoIcons.heart,
@@ -128,15 +126,15 @@ class InsuranceInfo extends StatelessWidget {
       child: Row(
         children: [
           icone,
-          SizedBox(
+          const SizedBox(
             width: 16,
           ),
           Text(
             title,
-            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+            style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
           ),
-          Spacer(),
-          Text(
+          const Spacer(),
+          const Text(
             'Conhecer',
             style: TextStyle(
                 fontSize: 14,

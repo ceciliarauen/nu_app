@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:nu_app_copy/screens/Indication/Forms/email/email_form_page.dart';
-import 'package:nu_app_copy/screens/home_page/home_page.dart';
 
 class ShareWithFriends extends StatelessWidget {
   const ShareWithFriends({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Column(
         children: [
@@ -33,13 +31,12 @@ class ShareWithFriends extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(
-                    bottom: 24.0, left: 24, right: 16, top: 16),
+              const Padding(
+                padding:
+                    EdgeInsets.only(bottom: 24.0, left: 24, right: 16, top: 16),
                 child: Text(
                   'Por onde você quer indicar seu amigo?',
-                  style: const TextStyle(
-                      fontSize: 22, fontWeight: FontWeight.w500),
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.w500),
                 ),
               ),
               ShareOption(
@@ -105,7 +102,7 @@ class ShareOption extends StatelessWidget {
                       fontSize: 16, fontWeight: FontWeight.w500),
                 ),
               ),
-              Spacer(),
+              const Spacer(),
               IconButton(
                 onPressed: press,
                 icon: const Icon(
@@ -119,7 +116,7 @@ class ShareOption extends StatelessWidget {
             ],
           ),
         ),
-        Divider(
+        const Divider(
           thickness: 1,
           color: Color.fromARGB(255, 190, 189, 189),
         ),

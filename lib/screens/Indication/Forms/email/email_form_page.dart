@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:nu_app_copy/constants/colors_palette.dart';
 import 'package:nu_app_copy/screens/Indication/Forms/email/email_form_content.dart';
 
 class EmailForm extends StatefulWidget {
@@ -27,7 +26,7 @@ class _EmailFormState extends State<EmailForm> {
       floatingActionButton: FloatingActionButton(
         elevation: 0,
         onPressed: () {},
-        backgroundColor: Color.fromARGB(255, 219, 217, 217),
+        backgroundColor: const Color.fromARGB(255, 219, 217, 217),
         child: const Icon(
           CupertinoIcons.arrow_right,
           color: Colors.grey,
