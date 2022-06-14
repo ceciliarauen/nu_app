@@ -9,7 +9,8 @@ class DiscoverServices extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      physics: const  BouncingScrollPhysics(parent:  AlwaysScrollableScrollPhysics()),
+      physics:
+          const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
       scrollDirection: Axis.horizontal,
       child: Padding(
         padding: const EdgeInsets.only(
@@ -102,8 +103,8 @@ class ServiceCard extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(right: 16),
       child: Container(
-        width: size.width * 0.75,
-        height: size.height * 0.60,
+        width: size.width * 0.65,
+        height: size.height * 0.45,
         decoration: BoxDecoration(
             color: ColorsPalette.kContainers,
             borderRadius: BorderRadius.circular(20)),
@@ -117,7 +118,8 @@ class ServiceCard extends StatelessWidget {
               child: Image.asset(
                 image,
                 fit: BoxFit.cover,
-                height: size.height * 0.33,
+                height: size.height * 0.20,
+                width: size.width * 0.65,
               ),
             ),
             Padding(
@@ -146,7 +148,7 @@ class ServiceCard extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 16.0),
+                    padding: const EdgeInsets.only(top: 8.0),
                     child: ElevatedButton(
                       onPressed: press,
                       child: Text(
