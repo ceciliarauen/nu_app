@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:nu_app_copy/screens/Indication/Forms/email/email_form_content.dart';
 
 class EmailForm extends StatefulWidget {
-  EmailForm({Key? key}) : super(key: key);
+  const EmailForm({Key? key}) : super(key: key);
 
   @override
   State<EmailForm> createState() => _EmailFormState();

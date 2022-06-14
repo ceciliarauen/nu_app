@@ -46,7 +46,7 @@ class ShareWithFriends extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => EmailForm(),
+                      builder: (context) =>  const EmailForm(),
                     ),
                   );
                 },
